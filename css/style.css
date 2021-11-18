@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap");
+
+:root {
+  --main-color: rgb(21, 1, 229);
+  --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+  --font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  background-color: var(--main-color);
+}
+
+section {
+  padding: 3rem 7%;
+}
+
+html {
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+  height: 2000px;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 7%;
+  background-color: #fff;
+}
+
+.header.active {
+  box-shadow: var(--box-shadow);
+}
+
+.header.active body {
+  background-color: rgb(203, 207, 207);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.header .navbar a {
+  font-size: 2rem;
+  margin-left: 3rem;
+  color: black;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+.header #menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--main-color);
+  transition: all 0.4s linear;
+  display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home .content,
+.home .image-container {
+  width: 100%;
+}
+
+.home .image-container img {
+  width: 50rem;
+  object-fit: cover;
+}
+
+.home .content h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.home .content h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--font);
+  color: var(--main-color);
+}
+
+.home .content p {
+  font-size: 1.5rem;
+  padding: 3rem 0;
+  letter-spacing: 0.2rem;
+  font-family: var(--font);
+}
+
+/* responsive breakpoints */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%;
+  }
+
+  .header,
+  section {
+    padding: 2rem 5%;
+  }
+
+  .header #menu-btn {
+    display: initial;
+  }
+
+  .header #menu-btn.fa-times {
+    transform: rotate(360deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background-color: rgb(226, 226, 231);
+    transition: 0.2s linear;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    padding: 2rem;
+  }
+  .home .image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .home .content h1 {
+    font-size: 3rem;
+  }
+}
