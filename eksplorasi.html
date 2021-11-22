@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eksplorasi</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="css/eksplorasi.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/common.css" />
+</head>
+
+<body>
+  <!-- header section start -->
+  <header class="header">
+    <div class="logo"><img src="images/logo.png" alt="logo">Foodinesia</div>
+    <nav class="navbar">
+      <a href="index.html">beranda</a>
+      <a href="eksplorasi.html">eksplorasi</a>
+      <a href="blog.html" class="active">blogs</a>
+      <a href="tentang.html">tentang</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </header>
+  <!-- header section end -->
+  <section class="hero">
+    <h1>Eksplorasi</h1>
+    <p>Mulai Eksplorasi makanan dan minuman sehat</p>
+  </section>
+  <!-- content section start -->
+  <section class="content">
+    <!-- data muncul disini -->
+  </section>
+  <!-- content section end -->
+  <!-- footer section start -->
+  <footer>
+    <div class="box">
+      <h1>fitur foody</h1>
+      <ul>
+        <li><i class="fas fa-arrow-right"></i>beranda</li>
+        <li><i class="fas fa-arrow-right"></i>eksplorasi</li>
+        <li><i class="fas fa-arrow-right"></i>tips & trik</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h1>media sosial</h1>
+      <ul>
+        <li><i class="fab fa-facebook"></i>crboncoder</li>
+        <li><i class="fab fa-instagram"></i>cirebon_coder</li>
+        <li><i class="fab fa-twitter"></i>cirebonCoder</li>
+        <li><i class="fab fa-youtube"></i>cirebon Coder</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h1>hubungi kami</h1>
+      <ul>
+        <li><i class="fas fa-envelope-square"></i>cireboncoder@gmail.com</li>
+        <li><i class="fas fa-phone-alt"></i>+6289673161954</li>
+        <li>
+          <i class="fas fa-map-marker-alt"></i>jalan. pangeran sutajaya desa.
+          gebang kulon cirebon - jawa barat
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <script src="js/script.js"></script>
+  <script src="js/data-makanan.js"></script>
+  <script>
+    const { makanan } = data;
+
+    const container = document.querySelector(".content");
+
+    function fetchData(data) {
+      data.forEach((data) => {
+        const card = `
+      <div class="card">
+              <img src="${data.gambar}" alt="${data.id}" loading="lazy"/>
+            <div class="description">
+              <a href="details/detail-eksplorasi.html">
+              <h2 class="name" data-id="${data.id}">${data.nama}</h2>
+            </a>
+              <p>${data.deskripsi}
+              </p>
+              <p><i class="fas fa-tag"></i> ${data.kategori}</p>
+            </div>
+          </div>
+      `;
+
+        container.innerHTML += card;
+      });
+    }
+
+    fetchData(makanan);
+
+    container.onclick = (e) => {
+      // console.log(e.target);
+      if (e.target.className == "name") {
+        const id = e.target.getAttribute("data-id");
+        localStorage.setItem("data-food", id);
+        console.log(id);
+      }
+    };
+  </script>
+</body>
+
+</html>

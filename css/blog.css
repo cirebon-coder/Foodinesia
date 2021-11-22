@@ -1,0 +1,72 @@
+section.hero {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 390px;
+  background-color: var(--loading);
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--secondColor);
+  text-align: center;
+}
+.hero p, .hero h1 {
+  text-shadow: 0 0 1rem black;
+}
+
+/* card */
+
+section.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 45%;
+  background-color: white;
+  margin-bottom: 1.8rem;
+  box-sizing: border-box;
+  border-radius: .5rem;
+  box-shadow: var(--shadow);
+  padding: 1.4rem;
+  transition: 0.3s ease-in;
+}
+.card:hover {
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--loading);
+  filter: contrast(1.2);
+  transition: 0.3s ease-in;
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.card p {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  color: var(--primaryColor);
+  line-height: 150%;
+  letter-spacing: 1.2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

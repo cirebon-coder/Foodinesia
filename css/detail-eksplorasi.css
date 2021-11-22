@@ -1,0 +1,170 @@
+.breadcumb {
+  margin-top: 4.3rem;
+  /* box-shadow: var(--shadow); */
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1em;
+}
+
+h1 {
+  color: var(--darkColor);
+  line-height: 120%;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
+}
+
+.breadcumb span {
+  font-weight: bold;
+}
+.detailCard {
+  width: 85%;
+  max-width: 965px;
+  /* background-color: red; */
+  margin: 2.3rem auto;
+  box-sizing: border-box;
+  /* padding: 2rem; */
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+.detailCard i {
+  margin-right: 0.27rem;
+}
+
+.detailCard ul {
+  margin-left: 2rem;
+  line-height: 200%;
+}
+
+.detailCard .flex {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border-radius: 1em;
+}
+
+.detailCard .imgCard {
+  flex: 1;
+  box-sizing: border-box;
+  height: auto;
+}
+.detailCard .imgCard img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--loading);
+  filter: contrast(1.2);
+  object-fit: cover;
+  border-radius: 1em 0 0 1em;
+}
+.detailCard section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex section {
+  padding: 1rem;
+}
+
+.flex section > div {
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  margin-top: 1em;
+}
+.descriptionCard {
+  padding: 1rem;
+  margin: 2.7rem;
+}
+
+/* manfaat */
+
+.detailCard .wrapFlex {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.wrapFlex .imgWrap {
+  flex: 1;
+  width: 100%;
+}
+.wrapFlex .imgWrap img {
+  height: 230px;
+}
+.wrapFlex .manfaat {
+  flex: 1;
+}
+
+/* resep */
+.resep section {
+  padding: 2rem;
+  margin-top: 1em;
+  border-radius: 1em;
+  box-shadow: var(--shadow);
+}
+.resep h2 {
+  text-align: center;
+  margin: 1em 0;
+}
+@media only screen and (max-width: 768px) {
+  .bradcumb {
+    margin-top: 2rem;
+  }
+  .descriptionCard {
+    padding: 0;
+    margin: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 120%;
+    color: var(--primaryColor);
+  }
+  .flex section {
+    padding: 0;
+  }
+  .flex section > div {
+    margin: 1em;
+  }
+  .flex .tags {
+    position: relative;
+    top: -10px;
+  }
+  .wrapFlex .imgWrap img {
+    height: 200px;
+  }
+  section.detailCard {
+    width: 95%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .detailCard .flex {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .detailCard .flex .tag {
+    padding-bottom: 1rem;
+  }
+  .detailCard .wrapFlex {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .detailCard .imgCard img {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .manfaat {
+    margin-top: 3rem;
+  }
+  .resep section {
+    padding: 1rem;
+  }
+}

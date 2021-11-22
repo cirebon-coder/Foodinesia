@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --darkColor: #05445e;
+  --lightColor: #d4f1f4;
+  --primaryColor: #189ab4;
+  --secondColor: #75e6da;
+  --shadow: 0 .4rem .9rem 0 rgba(0, 0, 0, 0.15);
+
+  --main-color: rgb(21, 1, 229);
+  --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+  --fontPrimary: "Montserrat", Arial, sans-serif;
+  --fontSecondary: "Poppins", Arial, sans-serif;
+}
+
+h1 {
+  color: var(--lightColor);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: var(--fontPrimary);
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.5em 0;
+  font-family: var(--fontPrimary);
+  color: var(--darkColor);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: var(--fontPrimary);
+  margin: 0.5em 0;
+  color: var(--darkColor);
+}
