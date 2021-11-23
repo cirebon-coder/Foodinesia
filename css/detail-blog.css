@@ -57,8 +57,10 @@ h1 {
   color: silver;
   font-style: italic;
   font-size: .8rem;
+  
 }
 .sumber span {
+  text-transform: none!important;
   font-weight: bold;
 }
 

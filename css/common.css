@@ -5,7 +5,6 @@
   padding: 0;
   border: none;
   outline: none;
-  box-sizing: border-box;
   text-transform: capitalize;
   text-decoration: none;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -16,12 +15,20 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(233, 160, 25);
+}
+
 :root {
   --darkColor: #05445e;
   --lightColor: #d4f1f4;
   --primaryColor: #189ab4;
   --secondColor: #75e6da;
-  --shadow: 0 .4rem .9rem 0 rgba(0, 0, 0, 0.15);
+  --shadow: 0 0.4rem 0.9rem 0 rgba(0, 0, 0, 0.15);
 
   --main-color: rgb(21, 1, 229);
   --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);

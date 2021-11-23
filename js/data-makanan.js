@@ -4,7 +4,7 @@ const data = {
       id: "1",
       nama: "jasuke",
       kategori: "jagung",
-      gambar: "images/foods/jasuke.png",
+      gambar: "images/foods/jasuke.jpeg",
       bahan: [
         "500 gram jagung manis yang sudah bebas dari batangnya",
         "100 gram Blue Band",
@@ -35,7 +35,7 @@ const data = {
       id: "2",
       nama: "roti gandum",
       kategori: "gandum",
-      gambar: "images/foods/roti-gandum.png",
+      gambar: "images/foods/roti-gandum.jpeg",
       bahan: [
         "3 1/2 cup (380 gr) tepung gandum utuh (whole wheat bread)",
         "1/3 cup (80 ml) susu cair (karena susu cair saya habis, saya menggunakan 1/2 bungkus susu bubuk + 80 ml air hangat)",
@@ -72,7 +72,7 @@ const data = {
       id: "3",
       nama: "daging sapi lada hitam",
       kategori: "daging",
-      gambar: "images/foods/daging-sapi-lada-hitam.png",
+      gambar: "images/foods/daging-sapi-lada-hitam.jpeg",
       bahan: [
         "Daging sapi bagian has dalam 500 gram",
         "Bawang bombay 1 buah, potong kasar",
@@ -108,7 +108,7 @@ const data = {
       id: "4",
       nama: "bakwan brokoli jagung",
       kategori: "sayur brokoli",
-      gambar: "images/foods/bakwan-brokoli-jagung.png",
+      gambar: "images/foods/bakwan-brokoli-jagung.jpeg",
       bahan: [
         "1 buah brokoli",
         "1 buah jagung manis, rebus dan pipil",
@@ -141,7 +141,7 @@ const data = {
       id: "5",
       nama: "kentang panggang",
       kategori: "kentang",
-      gambar: "images/foods/kentang-panggang.png",
+      gambar: "images/foods/kentang-panggang.jpeg",
       bahan: [
         "55 gram mentega, potong dadu",
         "25 gram tepung terigu serbaguna",
@@ -179,7 +179,7 @@ const data = {
       id: "6",
       nama: "Omelet",
       kategori: "telur",
-      gambar: "images/foods/omelet.png",
+      gambar: "images/foods/omelet.jpeg",
       bahan: [
         "2 Butir telur ayam",
         "2 Sendok makan susu cair",
@@ -208,7 +208,7 @@ const data = {
       id: "7",
       nama: "Bola bola roti ayam",
       kategori: "bayam",
-      gambar: "images/foods/Bola-bola-roti-ayam.png",
+      gambar: "images/foods/Bola-bola-roti-ayam.jpeg",
       bahan: [
         "150 gr udang kupas cincangi",
         "Secukupnya bayam direbus (ambil daunnya saja) peras airnya ",
@@ -244,7 +244,7 @@ const data = {
       id: "8",
       nama: "Ikan bakar",
       kategori: "bayam",
-      gambar: "images/foods/Ikan-bakar.png",
+      gambar: "images/foods/Ikan-bakar.jpeg",
       bahan: [
         "2 ekor ikan bawal ukuran sedang, bersihkan",
         "6 sdm kecap manis",
@@ -278,7 +278,7 @@ const data = {
       id: "9",
       nama: "Jus apel",
       kategori: "buah apel",
-      gambar: "images/foods/jus-apel.png",
+      gambar: "images/foods/jus-apel.jpeg",
       bahan: [
         "1 apel merah segar",
         "2 sendok makan gula pasir",
@@ -307,7 +307,7 @@ const data = {
       id: "10",
       nama: "Jus strawberry",
       kategori: "buah strawberry",
-      gambar: "images/foods/jus-strawberry.png",
+      gambar: "images/foods/jus-strawberry.jpeg",
       bahan: [
         "15 Buah strawberry yang masih segar",
         "2 sdm Gula pasir",
