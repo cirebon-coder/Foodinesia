@@ -20,8 +20,8 @@
     <div class="logo"><img src="images/logo.png" alt="logo">Foodinesia</div>
     <nav class="navbar">
       <a href="index.html">beranda</a>
-      <a href="eksplorasi.html">eksplorasi</a>
-      <a href="blog.html" class="active">blogs</a>
+      <a href="eksplorasi.html" class="active">eksplorasi</a>
+      <a href="blog.html">blog</a>
       <a href="tentang.html">tentang</a>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -39,11 +39,11 @@
   <!-- footer section start -->
   <footer>
     <div class="box">
-      <h1>fitur foody</h1>
+      <h1>fitur Foodinesia</h1>
       <ul>
         <li><i class="fas fa-arrow-right"></i>beranda</li>
         <li><i class="fas fa-arrow-right"></i>eksplorasi</li>
-        <li><i class="fas fa-arrow-right"></i>tips & trik</li>
+        <li><i class="fas fa-arrow-right"></i>Blog</li>
       </ul>
     </div>
     <div class="box">
@@ -71,42 +71,7 @@
 
   <script src="js/script.js"></script>
   <script src="js/data-makanan.js"></script>
-  <script>
-    const { makanan } = data;
-
-    const container = document.querySelector(".content");
-
-    function fetchData(data) {
-      data.forEach((data) => {
-        const card = `
-      <div class="card">
-              <img src="${data.gambar}" alt="${data.id}" loading="lazy"/>
-            <div class="description">
-              <a href="details/detail-eksplorasi.html">
-              <h2 class="name" data-id="${data.id}">${data.nama}</h2>
-            </a>
-              <p>${data.deskripsi}
-              </p>
-              <p><i class="fas fa-tag"></i> ${data.kategori}</p>
-            </div>
-          </div>
-      `;
-
-        container.innerHTML += card;
-      });
-    }
-
-    fetchData(makanan);
-
-    container.onclick = (e) => {
-      // console.log(e.target);
-      if (e.target.className == "name") {
-        const id = e.target.getAttribute("data-id");
-        localStorage.setItem("data-food", id);
-        console.log(id);
-      }
-    };
-  </script>
+  <script src="js/eksplorasi.js"></script>
 </body>
 
 </html>

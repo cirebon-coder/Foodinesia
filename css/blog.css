@@ -65,6 +65,10 @@ section.content {
   letter-spacing: 1.2px;
 }
 
+p.tanggal {
+  color: silver;
+}
+
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;

@@ -97,8 +97,10 @@ html {
 }
 
 .home .image-container img {
-  width: 50rem;
+  width: 45rem;
   object-fit: cover;
+  display: flex;
+  margin: auto;
 }
 
 .home .content h1 {
@@ -216,6 +218,18 @@ footer .box ul li {
 footer .box ul li i {
   color: var(--main-color);
   padding-right: 2rem;
+}
+
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  margin-right: .5rem;
 }
 
 /* responsive breakpoints */

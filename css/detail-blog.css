@@ -29,12 +29,12 @@ h1 {
 .container .imgWrap {
   width: 100%;
   box-sizing: border-box;
+  background-color: var(--loading);
   height: 300px;
   margin: auto;
 }
 .container .imgWrap img {
   width: 100%;
-  background-color: var(--loading);
   filter: contrast(1.2);
   height: 100%;
   background-position: center;
@@ -44,6 +44,22 @@ h1 {
 
 .deskripsi p {
   line-height: 185%;
+}
+
+.title p {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: silver;
+}
+
+.sumber {
+  margin-top: 1rem;
+  color: silver;
+  font-style: italic;
+  font-size: .8rem;
+}
+.sumber span {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {

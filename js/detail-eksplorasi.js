@@ -6,28 +6,33 @@ const elbahan = document.querySelector(".bahan ul");
 const elmanfaat = document.querySelector(".manfaat ul");
 const elprosedur = document.querySelector(".prosedur ul");
 const breadcumb = document.querySelector(".breadcumb span");
-const deskripsi = document.querySelector(".tags p");
+const eldeskripsi = document.querySelector(".tags p");
 const imgCard = document.querySelector(".imgCard img");
 const tag = document.querySelector(".tag span");
-const title = document.querySelector(".title h1");
+const title = document.querySelector(".title h2");
+const subtitle = document.querySelector("title");
 
-let manfaat = hasil.manfaat;
-let prosedur = hasil.prosedur;
-let bahan = hasil.bahan;
+let { bahan, manfaat, prosedur, nama, gambar, deskripsi, kategori } = hasil;
 
-title.innerHTML = hasil.nama;
-tag.innerHTML = hasil.nama;
-deskripsi.innerHTML = hasil.deskripsi;
-breadcumb.innerHTML = hasil.nama;
-imgCard.setAttribute("src", "../" + hasil.gambar);
+function setEl(element, content = nama) {
+  element.innerHTML = content;
+}
 
 function list(data, element) {
   data.forEach((e) => {
     let el = `
-        <li>${e}</li>`;
+    <li>${e}</li>`;
     element.innerHTML += el;
   });
 }
+
+imgCard.setAttribute("src", "../" + gambar);
+
+setEl(subtitle);
+setEl(title);
+setEl(tag, kategori);
+setEl(eldeskripsi, deskripsi);
+setEl(breadcumb);
 
 list(bahan, elbahan);
 list(manfaat, elmanfaat);

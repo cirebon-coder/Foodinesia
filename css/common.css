@@ -5,6 +5,7 @@
   padding: 0;
   border: none;
   outline: none;
+  box-sizing: border-box;
   text-transform: capitalize;
   text-decoration: none;
   font-family: "Poppins", Arial, Helvetica, sans-serif;

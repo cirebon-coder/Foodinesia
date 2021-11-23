@@ -94,7 +94,7 @@ const data = {
         "Angkat, tumis sapi lada hitam siap disajikan",
       ],
       deskripsi:
-        "ikan bakar adalah hidangan ikan yang dibakar atau dipanggang di atas api atau bara api",
+        "Daging sapi merupakan salah satu bahan makanan dengan sumber protein hewani yang mudah diolah menjadi berbagai masakan yang lezat",
       manfaat: [
         "Meningkatkan Massa Otot",
         "Kaya akan Mineral",

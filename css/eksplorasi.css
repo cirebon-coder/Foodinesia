@@ -1,3 +1,4 @@
+
 section.hero {
   margin-top: 2rem;
   display: flex;
@@ -69,6 +70,10 @@ section.content {
 @media only screen and (max-width: 768px) {
  .content {
    width: 100%;
+ }
+
+ .title h2 {
+   font-size: 25rem;
  }
  .card {
    width: 320px;
