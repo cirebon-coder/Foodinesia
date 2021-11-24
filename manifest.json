@@ -1,16 +1,15 @@
 {
-    "name": "Foodinesia - referensi makanan sehat",
+    "name": "Foodinesia",
     "short_name": "foodinesia",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#F3950D",
+    "background_color": "#0F2C67",
     "description": "Foodinesia merupakan sebuah website yang menyediakan referensi makanan dan minuman sehat serta artikel dan komunitas yang relevan dengan kesehatan",
-    "dir": "ltr",
+    "dir": "auto",
     "categories": "education,health",
-    "lang": "in",
     "orientation": "any",
     "scope": "/",
-    "theme_color": "#F4E185",
+    "theme_color": "#0F2C67",
     "icons": [
         {
             "src": "/images/icon/icon_48x48.png",

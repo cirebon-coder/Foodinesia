@@ -28,7 +28,8 @@
 }
 
 section {
-  padding: 3rem 7%;
+  padding: 5rem 7%;
+  background-color: rgb(253, 253, 253);
 }
 
 html {
@@ -140,7 +141,7 @@ html::-webkit-scrollbar-thumb {
   gap: 1rem;
 }
 
-.benefit .box i.fas {
+.benefit .box i {
   font-size: 20px;
   width: 50px;
   box-sizing: border-box;
@@ -152,6 +153,7 @@ html::-webkit-scrollbar-thumb {
   text-align: center;
   line-height: 50px;
 }
+
 .benefit .box .content h2 {
   font-size: 20px;
   font-family: var(--font);
@@ -212,7 +214,7 @@ html::-webkit-scrollbar-thumb {
 .feature .box-container .box {
   display: flex;
   gap: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .feature .box-container .box .content,
@@ -222,6 +224,7 @@ html::-webkit-scrollbar-thumb {
 .feature .box-container .box .img img {
   display: flex;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .feature .box-container .box .content h2 {
@@ -241,6 +244,8 @@ html::-webkit-scrollbar-thumb {
 .feature .box-container .box .content a {
   color: var(--main-color);
   font-size: 1.5rem;
+  font-family: var(--font);
+  font-weight: 600;
 }
 
 footer {
@@ -287,14 +292,17 @@ footer .box ul li i {
 }
 
 /* responsive breakpoints */
+
 @media (max-width: 991px) {
   html {
     font-size: 60%;
   }
 
-  .header,
+  .header {
+    padding: 1.5rem 5%;
+  }
   section {
-    padding: 2rem 5%;
+    padding: 4rem 5%;
   }
 
   .header #menu-btn {
@@ -340,7 +348,7 @@ footer .box ul li i {
     margin-top: 1rem;
   }
   .about .img-container img {
-    width: 90vw;
+    width: 80vw;
   }
   .feature .box-container .box {
     flex-wrap: wrap;
@@ -348,5 +356,18 @@ footer .box ul li i {
 
   .feature .box-container .box:nth-child(odd) {
     flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    width: 100vw;
+  }
+  html {
+    font-size: 55%;
+  }
+
+  .feature .box-container .box .img img {
+    width: 90%;
   }
 }

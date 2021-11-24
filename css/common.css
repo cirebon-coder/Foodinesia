@@ -62,3 +62,20 @@ h3 {
   margin: 0.5em 0;
   color: var(--darkColor);
 }
+section.hero {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 390px;
+  background-color: var(--loading);
+  background-image: url(../images/hero.jpeg);
+  background-attachment: fixed;
+  overflow: hidden;
+  background-position: bottom;
+  background-size: cover;
+  color: var(--secondColor);
+  text-align: center;
+}
