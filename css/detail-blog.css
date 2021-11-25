@@ -52,6 +52,14 @@ h1 {
   color: silver;
 }
 
+.deskripsi ol {
+  margin-left: 2rem;
+}
+.deskripsi li span {
+  font-weight: bold;
+}
+
+
 .sumber {
   margin-top: 1rem;
   color: silver;
