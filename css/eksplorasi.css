@@ -24,7 +24,7 @@ section.content {
   max-width: 1200px;
   padding: 1em;
   display: flex;
-  margin: auto;
+  margin: 2rem auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -67,6 +67,9 @@ section.content {
   letter-spacing: 1.2px;
 }
 
+p.tag {
+  color: silver;
+}
 @media only screen and (max-width: 768px) {
  .content {
    width: 100%;

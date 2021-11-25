@@ -1,10 +1,11 @@
-// const CACHE_NAME = 'foodinesia-pwa-v2.22';
+// const CACHE_NAME = 'foodinesia-pwa-v2.25';
 // const urlsToCache = [
 //   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
 //   'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap',
 //   '/',
 //   'favicon.ico',
 //   'index.html',
+//   'fakesuccess.html',
 //   'blog.html',
 //   'eksplorasi.html',
 //   'tentang.html',
@@ -26,6 +27,7 @@
 //   'css/eksplorasi.css',
 //   'css/main.css',
 //   'css/style.css',
+//   'css/fakestyle.css',
 //   'images/foods/bakwan-brokoli-jagung.jpeg',
 //   'images/foods/bola-bola-roti-ayam.jpeg',
 //   'images/foods/daging-sapi-lada-hitam.jpeg',

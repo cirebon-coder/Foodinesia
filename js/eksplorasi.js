@@ -14,7 +14,7 @@ function fetchData(data) {
             </a>
               <p>${data.deskripsi}
               </p>
-              <p><i class="fas fa-tag"></i> ${data.kategori}</p>
+              <p class="tag"><i class="fas fa-tag"></i> ${data.kategori}</p>
             </div>
           </div>
       `;

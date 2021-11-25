@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  text-align: center;
+  box-sizing: border-box;
+  background: red;
+  display: grid;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+  background-color: white;
+}
+
+section img {
+  width: 290px;
+}
+
+section a {
+  padding: 1.3rem 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(233, 160, 25);
+  display: inline-block;
+  color: white;
+  border-radius: .5rem;
+  width: 150px;
+  font-weight: bold;
+  margin: 3rem auto;
+  text-align: center;
+  text-decoration: none;
+}

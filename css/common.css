@@ -21,6 +21,7 @@ html::-webkit-scrollbar {
 }
 html::-webkit-scrollbar-thumb {
   background-color: rgb(233, 160, 25);
+  border-radius: .5rem;
 }
 
 :root {
@@ -30,14 +31,16 @@ html::-webkit-scrollbar-thumb {
   --secondColor: #75e6da;
   --shadow: 0 0.4rem 0.9rem 0 rgba(0, 0, 0, 0.15);
 
-  --main-color: rgb(21, 1, 229);
+  /* --main-color: rgb(21, 1, 229); */
+  --main-color: #0F2C67;
+  --second-color: rgb(233, 160, 25);
   --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
   --fontPrimary: "Montserrat", Arial, sans-serif;
   --fontSecondary: "Poppins", Arial, sans-serif;
 }
 
 h1 {
-  color: var(--lightColor);
+  color: var(--second-color);
   font-size: 2rem;
   letter-spacing: 2px;
   font-family: var(--fontPrimary);

@@ -10,6 +10,7 @@
   z-index: 999;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
   padding: 15px 7%;
   background-color: #fff;
 }
@@ -30,9 +31,9 @@
   color: black;
 }
 
-.header .navbar a:hover,
 .header .navbar a.active {
   color: var(--main-color);
+  font-weight: bold;
 }
 
 .header #menu-btn {
