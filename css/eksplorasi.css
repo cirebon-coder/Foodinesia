@@ -39,6 +39,21 @@ section.content {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s ease-in;
+  opacity: 0;
+  animation: slide_top 1s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  overflow: hidden;
+}
+
+@keyframes slide_top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .card:hover {
   box-shadow: var(--shadow);
@@ -71,12 +86,11 @@ p.tag {
   color: silver;
 }
 @media only screen and (max-width: 768px) {
+  h2.name {
+    font-size: 1.4rem;
+  }
   .content {
     width: 100%;
-  }
-
-  .title h2 {
-    font-size: 25rem;
   }
   .card {
     width: 320px;

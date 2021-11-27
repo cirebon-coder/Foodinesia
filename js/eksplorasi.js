@@ -1,12 +1,10 @@
 
-const { makanan } = data;
-
 const container = document.querySelector(".content");
-
+let delay = 1;
 function fetchData(data) {
   data.forEach((data) => {
     const card = `
-      <div class="card" >
+      <div class="card" style="--i: ${delay++}">
               <img class="desc" data-id="${data.id}" src="${data.gambar}" alt="${data.id}" loading="lazy"/>
             <div class="description">
               <a href="details/detail-eksplorasi.html">
@@ -23,7 +21,7 @@ function fetchData(data) {
   });
 }
 
-fetchData(makanan);
+fetchData(dataEksplorasi);
 
 container.onclick = (e) => {
   // console.log(e.target);

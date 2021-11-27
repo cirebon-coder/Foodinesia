@@ -41,10 +41,24 @@ section.content {
   box-shadow: var(--box-shadow);
   padding: 1.4rem;
   transition: 0.3s ease-in;
+  opacity: 0;
+  animation: slide_top 1s linear forwards;
+  animation-delay: calc(.75s * var(--i));
+  overflow: hidden;
+}
+
+@keyframes slide_top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 .card:hover {
   box-shadow: var(--shadow);
-  transform: scale(1.05);
 }
 .card img {
   width: 100%;
@@ -73,5 +87,8 @@ p.tanggal {
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+  h2.name {
+    font-size: 1.4rem;
   }
 }

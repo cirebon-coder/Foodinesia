@@ -1,6 +1,5 @@
-const { makanan } = data;
 const id = localStorage.getItem("data-food");
-const hasil = makanan[Number(id - 1)];
+const hasil = dataEksplorasi[Number(id - 1)];
 
 const elbahan = document.querySelector(".bahan ul");
 const elmanfaat = document.querySelector(".manfaat ul");
@@ -11,8 +10,8 @@ const imgCard = document.querySelector(".imgCard img");
 const tag = document.querySelector(".tag span");
 const title = document.querySelector(".title h2");
 const subtitle = document.querySelector("title");
-
-let { bahan, manfaat, prosedur, nama, gambar, deskripsi, kategori } = hasil;
+const elmSumber = document.querySelector(".sumber span");
+let { bahan, manfaat, prosedur, nama, gambar, deskripsi, kategori, sumber } = hasil;
 
 function setEl(element, content = nama) {
   element.innerHTML = content;
@@ -33,6 +32,7 @@ setEl(title);
 setEl(tag, kategori);
 setEl(eldeskripsi, deskripsi);
 setEl(breadcumb);
+setEl(elmSumber, sumber);
 
 list(bahan, elbahan);
 list(manfaat, elmanfaat);

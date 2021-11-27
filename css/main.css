@@ -23,12 +23,41 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--main-color);
+  opacity: 0;
+  animation: slide_left 0.15s linear forwards;
+  animation-delay: 0.2s;
+}
+.hero p {
+  animation: slide_left 0.25s linear forwards;
+  animation-delay: 0.5s;
+}
+@keyframes slide_left {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
 }
 
 .header .navbar a {
   font-size: 1.1rem;
   margin-left: 2rem;
   color: black;
+  opacity: 0;
+  animation: slide_top 0.5s linear forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes slide_top {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header .navbar a.active {
@@ -40,8 +69,18 @@
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--main-color);
-  transition: all 0.4s linear;
+  transition: all 0.45s linear;
   display: none;
+}
+@keyframes slide_right {
+  0% {
+    transform: translatex(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
 }
 
 footer {
@@ -76,7 +115,6 @@ footer .box ul li i {
   padding-right: 1rem;
 }
 
-
 .logo {
   display: flex;
   justify-content: center;
@@ -84,7 +122,7 @@ footer .box ul li i {
 }
 .logo img {
   width: 50px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 991px) {

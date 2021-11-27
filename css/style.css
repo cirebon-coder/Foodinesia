@@ -4,7 +4,7 @@
   --main-color: #0f2c67;
   --second-color: rgb(233, 160, 25);
   --hover-second: rgb(196, 139, 32);
-  --primaryColor: ;
+  /* --primaryColor: ; */
   --third-Color: #189ab4;
   --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
   --font: "montserrat", sans-serif;
@@ -30,7 +30,10 @@
   color: #fff;
   border-radius: 0.5rem;
   background-color: var(--second-color);
-  transition: .35s ease;
+  transition: 0.35s ease;
+  opacity: 0;
+  animation: slide_top 0.5s linear forwards;
+  animation-delay: 2s;
 }
 .btn:hover {
   background-color: var(--hover-second);
@@ -48,7 +51,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  background-color: rgb(43, 29, 101);
+  background-color: rgb(226, 224, 224);
   width: 15px;
 }
 html::-webkit-scrollbar-thumb {
@@ -77,12 +80,37 @@ html::-webkit-scrollbar-thumb {
   font-size: 2rem;
   font-weight: bold;
   color: var(--main-color);
+  opacity: 0;
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: 0.2s;
+}
+@keyframes slide_left {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
 }
 
 .header .navbar a {
   font-size: 1.7rem;
   margin-left: 3rem;
   color: black;
+  opacity: 0;
+  animation: slide_top 0.5s linear forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slide_top {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header .navbar a.active {
@@ -117,12 +145,37 @@ html::-webkit-scrollbar-thumb {
   object-fit: cover;
   display: flex;
   margin: auto;
+  opacity: 0;
+  animation: fade_in 1s linear forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .home .content h1 {
   font-size: 4rem;
   font-weight: bolder;
   line-height: 130%;
+  opacity: 0;
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: 1.75s;
+}
+@keyframes slide_left {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
 }
 
 .home .content h2 {
@@ -130,13 +183,29 @@ html::-webkit-scrollbar-thumb {
   padding-bottom: 2rem;
   font-family: "montserrat", sans-serif;
   color: var(--second-color);
+  opacity: 0;
+  animation: slide_right 0.5s linear forwards;
+  animation-delay: 1.5s;
+  overflow: hidden;
 }
-
+@keyframes slide_right {
+  0% {
+    transform: translatex(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
 .home .content p {
   font-size: 1.5rem;
   padding: 2rem 0 3.8rem;
   line-height: 170%;
   font-family: var(--font);
+  opacity: 0;
+  animation: slide_right 0.5s linear forwards;
+  animation-delay: 1.8s;
 }
 
 .benefit {
@@ -152,6 +221,9 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   gap: 1rem;
   text-align: left;
+  opacity: 0;
+  animation: slide_left 1s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
 }
 
 .benefit .box i {
@@ -263,7 +335,7 @@ html::-webkit-scrollbar-thumb {
   border: 0.2rem solid var(--second-color);
   padding: 1.6rem 3rem;
   border-radius: 0.5rem;
-  transition: .35s ease;
+  transition: 0.35s ease;
 }
 
 .feature .box-container .box .content a:hover {

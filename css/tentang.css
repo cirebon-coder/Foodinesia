@@ -1,4 +1,4 @@
-body{
+body {
   scroll-behavior: smooth;
 }
 .hero p,
@@ -13,6 +13,7 @@ body{
   font-weight: bold;
   font-size: 1rem;
   color: #fff;
+  opacity: 0;
   border-radius: 0.5rem;
   background-color: var(--second-color);
   text-align: center;
@@ -20,12 +21,14 @@ body{
   margin-top: 15px;
   max-width: 11.5rem;
   padding: 0.5rem 1.5rem;
-  transition: .35s ease;
+  transition: 0.35s ease;
+  animation: fade_in 1s linear forwards;
+  animation-delay: 1.4s;
 }
+
 .btn:hover {
   background-color: var(--hover-second);
   border: none;
-
 }
 
 .content {
@@ -53,8 +56,13 @@ body{
   flex: 1;
   justify-content: center;
 }
+.content .wrap section h2 {
+  opacity: 0;
+  animation: slide_right .6s linear forwards;
+  animation-delay: .8s;
+}
 .wrap section p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .content .form-container {
   display: flex;
@@ -88,10 +96,22 @@ body{
 }
 .imgWrap img {
   width: 300px;
+  opacity: 0;
+  animation: slide_right 1s linear forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 form input {
-  margin-bottom: .8rem!important;
+  margin-bottom: 0.8rem !important;
 }
 @media (max-width: 991px) {
   .content .form-container {
@@ -106,9 +126,8 @@ form input {
   .content {
     width: 90%;
   }
-  .content .wrap{
+  .content .wrap {
     display: flex;
     flex-direction: column-reverse;
-    
   }
 }

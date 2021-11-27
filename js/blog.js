@@ -1,9 +1,10 @@
 const title = document.querySelector('title');
 const container = document.querySelector(".content");
+let delay = 1;
 function fetchData(dataBlog) {
   dataBlog.forEach((data) => {
     const card = `
-      <div class="card">
+      <div class="card" style="--i: ${delay++}">
               <img class="desc" data-id="${data.id}" src="images/blog/${data.gambar}" alt="${data.id
       }" loading="lazy"/>
             <div class="description">
