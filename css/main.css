@@ -51,7 +51,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   padding: 2rem 7%;
   gap: 4rem;
-  background-color: rgb(223, 223, 223);
+  background-color: orange;
 }
 
 footer .box {

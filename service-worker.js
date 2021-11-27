@@ -1,4 +1,4 @@
-const CACHE_NAME = 'foodinesia-pwa-v2.3';
+const CACHE_NAME = 'foodinesia-pwa-v2.47';
 const urlsToCache = [
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css',
   'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap',
@@ -30,9 +30,9 @@ const urlsToCache = [
   'css/fakestyle.css',
   'css/tentang.css',
   'images/foods/bakwan-brokoli-jagung.jpeg',
+  'images/foods/ikan-bakar.jpeg',
   'images/foods/bola-bola-roti-ayam.jpeg',
   'images/foods/daging-sapi-lada-hitam.jpeg',
-  'images/foods/ikan-bakar.jpeg',
   'images/foods/jasuke.jpeg',
   'images/foods/jus-apel.jpeg',
   'images/foods/jus-strawberry.jpeg',
@@ -48,12 +48,14 @@ const urlsToCache = [
   'images/illustration/detail-eks-ilus.png',
   'images/illustration/img-blog.png',
   'images/illustration/img-eksplorasi.png',
+  'images/illustration/success.png',
   'images/illustration/img-home.png',
   'images/illustration/img-komunitas.png',
   'images/illustration/img-tentang.png',
   'images/hero.jpeg',
   'images/home-hero.jpg',
   'images/logo.png',
+  'images/default.jpeg',
   'images/icon/icon_48x48.png',
   'images/icon/icon_72x72.png',
   'images/icon/icon_96x96.png',

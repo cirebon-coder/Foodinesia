@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap");
 :root {
   /* --main-color: rgb(21, 1, 229); */
-  --main-color: #0F2C67;
+  --main-color: #0f2c67;
   --second-color: rgb(233, 160, 25);
+  --hover-second: rgb(196, 139, 32);
   --primaryColor: ;
   --third-Color: #189ab4;
   --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -29,6 +30,11 @@
   color: #fff;
   border-radius: 0.5rem;
   background-color: var(--second-color);
+  transition: .35s ease;
+}
+.btn:hover {
+  background-color: var(--hover-second);
+  border: none;
 }
 section {
   padding: 5rem 7%;
@@ -42,11 +48,12 @@ html {
 }
 
 html::-webkit-scrollbar {
-  background-color: transparent;
-  width: 1rem;
+  background-color: rgb(43, 29, 101);
+  width: 15px;
 }
 html::-webkit-scrollbar-thumb {
   background-color: rgb(233, 160, 25);
+  border-radius: 0.35rem;
 }
 
 .header {
@@ -64,7 +71,6 @@ html::-webkit-scrollbar-thumb {
 
 .header.active {
   box-shadow: var(--box-shadow);
-  
 }
 
 .header .logo {
@@ -139,11 +145,13 @@ html::-webkit-scrollbar-thumb {
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .benefit .box {
   display: flex;
   gap: 1rem;
+  text-align: left;
 }
 
 .benefit .box i {
@@ -152,7 +160,7 @@ html::-webkit-scrollbar-thumb {
   box-sizing: border-box;
   height: 50px;
   margin-right: 1.5rem;
-  background-color: var(--third-Color);
+  background-color: var(--second-color);
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -252,9 +260,15 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   font-family: var(--font);
   font-weight: 600;
-  border: .2rem solid var(--second-color);
+  border: 0.2rem solid var(--second-color);
   padding: 1.6rem 3rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+  transition: .35s ease;
+}
+
+.feature .box-container .box .content a:hover {
+  background-color: var(--second-color);
+  color: white;
 }
 
 footer {
@@ -265,7 +279,7 @@ footer {
   padding: 3rem 7%;
   gap: 4rem;
   box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(255, 166, 0);
   width: 100%;
 }
 
@@ -298,6 +312,10 @@ footer .box ul li i {
 .logo img {
   width: 50px;
   margin-right: 0.5rem;
+}
+
+.fa-utensils {
+  max-width: 50px;
 }
 
 /* responsive breakpoints */
@@ -365,6 +383,10 @@ footer .box ul li i {
 
   .feature .box-container .box:nth-child(odd) {
     flex-wrap: wrap-reverse;
+  }
+
+  .fa-utensils {
+    max-width: 50px;
   }
 }
 

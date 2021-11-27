@@ -1,4 +1,3 @@
-
 section.hero {
   margin-top: 2rem;
   display: flex;
@@ -14,7 +13,8 @@ section.hero {
   color: var(--secondColor);
   text-align: center;
 }
-.hero p, .hero h1 {
+.hero p,
+.hero h1 {
   text-shadow: 0 0 1rem black;
 }
 /* card */
@@ -34,21 +34,22 @@ section.content {
   background-color: white;
   margin: 1em;
   box-sizing: border-box;
-  box-shadow: var(--shadow);
+  box-shadow: var(--box-shadow);
   padding: 1.4rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
   transition: 0.3s ease-in;
 }
 .card:hover {
-  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.19);
-  transform: scale(1.05);
+  box-shadow: var(--shadow);
+  transform: scale(1.03);
 }
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   background-color: var(--loading);
   filter: contrast(1.2);
   transition: 0.3s ease-in;
@@ -62,7 +63,6 @@ section.content {
 .card p {
   margin-bottom: 1em;
   font-size: 1rem;
-  color: var(--primaryColor);
   line-height: 150%;
   letter-spacing: 1.2px;
 }
@@ -71,14 +71,14 @@ p.tag {
   color: silver;
 }
 @media only screen and (max-width: 768px) {
- .content {
-   width: 100%;
- }
+  .content {
+    width: 100%;
+  }
 
- .title h2 {
-   font-size: 25rem;
- }
- .card {
-   width: 320px;
- }
+  .title h2 {
+    font-size: 25rem;
+  }
+  .card {
+    width: 320px;
+  }
 }

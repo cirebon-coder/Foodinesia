@@ -16,25 +16,26 @@ html {
 }
 
 html::-webkit-scrollbar {
-  background-color: transparent;
-  width: 10px;
+  background-color: rgb(43, 29, 101);
+  width: 15px;
 }
 html::-webkit-scrollbar-thumb {
   background-color: rgb(233, 160, 25);
-  border-radius: .5rem;
+  border-radius: 0.35rem;
 }
 
 :root {
   --darkColor: #05445e;
-  --lightColor: #d4f1f4;
   --primaryColor: #189ab4;
   --secondColor: #75e6da;
   --shadow: 0 0.4rem 0.9rem 0 rgba(0, 0, 0, 0.15);
 
   /* --main-color: rgb(21, 1, 229); */
-  --main-color: #0F2C67;
+  --main-color: #0f2c67;
   --second-color: rgb(233, 160, 25);
-  --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+  --hover-second: rgb(196, 139, 32);
+  --box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
   --fontPrimary: "Montserrat", Arial, sans-serif;
   --fontSecondary: "Poppins", Arial, sans-serif;
 }
@@ -79,6 +80,6 @@ section.hero {
   overflow: hidden;
   background-position: bottom;
   background-size: cover;
-  color: var(--secondColor);
+  color: rgb(244, 247, 201);
   text-align: center;
 }
