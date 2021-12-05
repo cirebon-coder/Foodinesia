@@ -42,8 +42,8 @@ section.content {
   padding: 1.4rem;
   transition: 0.3s ease-in;
   opacity: 0;
-  animation: slide_top 1s linear forwards;
-  animation-delay: calc(.75s * var(--i));
+  animation: slide_bottom 1s linear forwards;
+  animation-delay: calc(.65s * var(--i));
   overflow: hidden;
 }
 
@@ -62,11 +62,14 @@ section.content {
 }
 .card img {
   width: 100%;
+  opacity: 0;
   height: 200px;
   object-fit: cover;
   background-color: var(--loading);
   filter: contrast(1.2);
   transition: 0.3s ease-in;
+  animation: fade_in .5s linear forwards;
+  animation-delay: calc(.35s * var(--i));
 }
 
 .card img:hover {
@@ -75,9 +78,19 @@ section.content {
 
 .card p {
   margin-bottom: 1em;
+  opacity: 0;
   font-size: 1rem;
   line-height: 150%;
   letter-spacing: 1.2px;
+  animation: slide_left .7s linear forwards;
+  animation-delay: calc(.8s * var(--i));
+}
+
+.card .name {
+  animation: slide_right .4s linear forwards;
+  animation-delay: calc(.75s * var(--i));
+  opacity: 0;
+
 }
 
 p.tanggal {

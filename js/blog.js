@@ -1,6 +1,6 @@
 const title = document.querySelector('title');
 const container = document.querySelector(".content");
-let delay = 1;
+let delay = 0.5;
 function fetchData(dataBlog) {
   dataBlog.forEach((data) => {
     const card = `
@@ -26,7 +26,6 @@ function fetchData(dataBlog) {
 fetchData(dataBlog);
 
 container.onclick = (e) => {
-  // console.log(e.target);
   if (e.target.className == "name" || e.target.className == "desc") {
     const id = e.target.getAttribute("data-id");
     localStorage.setItem("data-blog", id);

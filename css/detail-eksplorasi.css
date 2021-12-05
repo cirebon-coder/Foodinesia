@@ -1,16 +1,19 @@
 .breadcumb {
   margin-top: 4.3rem;
-  /* box-shadow: var(--shadow); */
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 1em;
+  animation: slide_left 0.5s linear forwards;
+  overflow: hidden;
+}
+.breadcumb p {
+  animation: slide_left 0.45s linear forwards;
 }
 
 h1 {
   color: var(--darkColor);
   line-height: 120%;
   margin-bottom: 1rem;
-  /* padding: 1rem; */
 }
 
 .breadcumb span {
@@ -19,12 +22,12 @@ h1 {
 .detailCard {
   width: 85%;
   max-width: 965px;
-  /* background-color: red; */
   margin: 2.3rem auto;
   box-sizing: border-box;
-  /* padding: 2rem; */
   font-size: 1.2rem;
   line-height: 150%;
+  opacity: 0;
+  animation: slide_up .5s linear forwards;
 }
 
 .detailCard i {
@@ -57,8 +60,8 @@ h1 {
   object-fit: cover;
   border-radius: 1em 0 0 1em;
   opacity: 0;
-  animation: fade_in 1s linear forwards;
-  animation-delay: 2s;
+  animation: fade_in .5s linear forwards;
+  animation-delay: .5s;
 }
 
 @keyframes fade_in {
@@ -88,7 +91,7 @@ h1 {
   justify-content: center;
   opacity: 0;
   animation: slide_right 0.5s linear forwards;
-  animation-delay: 2.3s;
+  animation-delay: 1s;
   overflow: hidden;
 }
 @keyframes slide_right {
@@ -111,7 +114,11 @@ h1 {
 }
 
 /* manfaat */
-
+.wrapFlex {
+  opacity: 0;
+  animation: slide_bottom 0.5s linear forwards;
+  animation-delay: 1.6s;
+}
 .detailCard .wrapFlex {
   display: flex;
   margin-bottom: 5rem;
@@ -128,15 +135,35 @@ h1 {
 }
 
 /* resep */
+.resep {
+  opacity: 0;
+  animation: slide_up 0.5s linear forwards;
+  animation-delay: 2.5s;
+}
 .resep section {
   padding: 2rem;
   margin-top: 1em;
   border-radius: 1em;
   box-shadow: var(--shadow);
+  box-sizing: border-box;
 }
 .resep h2 {
   text-align: center;
   margin: 1em 0;
+}
+
+.sumber {
+  margin-top: 1rem;
+  color: silver;
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+.sumber span {
+  text-transform: none !important;
+  font-weight: bold;
+  box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
   .bradcumb {
@@ -161,6 +188,7 @@ h1 {
   }
   .wrapFlex .imgWrap img {
     height: 200px;
+
   }
   section.detailCard {
     width: 95%;
@@ -183,6 +211,7 @@ h1 {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    animation: slide_up 0.75s linear forwards;
   }
   .manfaat {
     margin-top: 3rem;

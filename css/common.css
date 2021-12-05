@@ -15,7 +15,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  background-color: rgb(226, 224, 224);
+  background-color: var(--main-color);
   width: 15px;
 }
 html::-webkit-scrollbar-thumb {
@@ -49,6 +49,7 @@ h1 {
   animation: slide_right 0.45s linear forwards;
   animation-delay: .35s;
 }
+
 @keyframes slide_right {
   0% {
     transform: translatex(100px);
@@ -85,6 +86,7 @@ section.hero {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   width: 100%;

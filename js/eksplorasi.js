@@ -24,11 +24,9 @@ function fetchData(data) {
 fetchData(dataEksplorasi);
 
 container.onclick = (e) => {
-  // console.log(e.target);
   if (e.target.className == "name" || e.target.className == "desc") {
     const id = e.target.getAttribute("data-id");
     localStorage.setItem("data-food", id);
     window.location.href = "details/detail-eksplorasi.html"
-    // console.log(id);
   }
 };

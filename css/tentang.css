@@ -100,7 +100,16 @@ body {
   animation: slide_right 1s linear forwards;
   animation-delay: 1.5s;
 }
-
+.img img {
+  opacity: 0;
+  animation: slide_right 1s linear forwards;
+  animation-delay: 2.5s;
+}
+.form-container form {
+  opacity: 0;
+  animation: slide_left 1s linear forwards;
+  animation-delay: 2.9s;
+}
 @keyframes fade_in {
   0% {
     opacity: 0;
@@ -130,4 +139,8 @@ form input {
     display: flex;
     flex-direction: column-reverse;
   }
+  .imgWrap img {
+    width: 250px;
+  }
 }
+

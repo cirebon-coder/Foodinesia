@@ -27,7 +27,7 @@ const dataEksplorasi = [
       "Membantu menjaga berat badan",
       "Menguatkan sistem imun",
     ],
-    sumber: 'https://www.merdeka.com/gaya/cara-membuat-omelet-kln.html'
+    sumber: 'https://www.merdeka.com/gaya/'
   },
   {
     id: "2",
@@ -65,7 +65,7 @@ const dataEksplorasi = [
       "baik bagi Jantung",
       "Sumber Gizi & Mineral",
     ],
-    sumber: 'http://cookingasyik.com/2014/10/04/ternyata-membuat-roti-gandum-sendiri-itu-mudah/'
+    sumber: 'http://cookingasyik.com/'
   },
   {
     id: "3",
@@ -102,7 +102,7 @@ const dataEksplorasi = [
       "Meningkatkan Kinerja Tubuh",
       "Kandungan Creatineyang baik bagi tubuh",
     ],
-    sumber: 'https://doyanresep.com/resep-sapi-lada-hitam/'
+    sumber: 'https://doyanresep.com/'
   },
   {
     id: "4",
@@ -136,7 +136,7 @@ const dataEksplorasi = [
       "Meningkatkan Kesehatan Jantung",
       "Menjaga Kesehatan Tulang",
     ],
-    sumber: 'https://blog.langganan.co.id/resep-kreasi-olahan-brokoli/'
+    sumber: 'https://blog.langganan.co.id/'
   },
   {
     id: "5",
@@ -175,7 +175,7 @@ const dataEksplorasi = [
       "Mengobati Wajah Berjerawat",
       "Mengatasi bengkak di sekitar mata",
     ],
-    sumber: 'https://id.wikihow.com/Membuat-Kentang-Panggang'
+    sumber: 'https://id.wikihow.com/'
   },
   {
     id: "6",
@@ -205,13 +205,13 @@ const dataEksplorasi = [
       "Mencegah Penyakit Kanker",
       "Merawat Kesehatan Kulit",
     ],
-    sumber: 'https://www.tokopedia.com/blog/resep-jagung-susu-keju-jasuke/'
+    sumber: 'https://www.tokopedia.com/'
   },
   {
     id: "7",
     nama: "Bola bola roti bayam",
     kategori: "bayam",
-    gambar: "images/foods/Bola-bola-roti-bayam.jpeg",
+    gambar: "images/foods/bayam.jpeg",
     bahan: [
       "150 gr udang kupas cincangi",
       "Secukupnya bayam direbus (ambil daunnya saja) peras airnya ",
@@ -242,13 +242,13 @@ const dataEksplorasi = [
       "Menjaga kesehatan kulit",
       "Mencegah kanker",
     ],
-    sumber: 'https://www.briliofood.net/resep/20-resep-olahan-bayam-yang-praktis-unik-dan-menggugah-selera-190821h.html'
+    sumber: 'https://www.briliofood.net/'
   },
   {
     id: "8",
     nama: "Ikan bakar",
     kategori: "ikan",
-    gambar: "images/foods/Ikan-bakar.jpeg",
+    gambar: "images/foods/ikan.jpeg",
     bahan: [
       "2 ekor ikan bawal ukuran sedang, bersihkan",
       "6 sdm kecap manis",
@@ -277,7 +277,7 @@ const dataEksplorasi = [
       "Baik untuk penderita gangguan tiroid",
       "Menjaga kesehatan mata",
     ],
-    sumber: 'https://resepyou.com/cara-masak-ikan-bakar/'
+    sumber: 'https://resepyou.com/'
   },
   {
     id: "9",
@@ -338,7 +338,7 @@ const dataEksplorasi = [
       "Mengontrol gula darah",
       "menurunkan berat badan",
     ],
-    sumber: 'https://goodminds.id/cara-membuat-jus-apel/'
+    sumber: 'https://goodminds.id/'
   },
   {
     id: "11",
@@ -372,7 +372,7 @@ const dataEksplorasi = [
       "Meningkatkan suasana hati atau mood",
       "Meningkatkan kesehatan prostat",
     ],
-    sumber: 'https://www.alpermata.com/blog/nikmatnya-jus-buah-alpokat-medan/'
+    sumber: 'https://www.alpermata.com/blog/'
   },
   {
     id: "12",
@@ -405,7 +405,7 @@ const dataEksplorasi = [
       "Mengendalikan gula darah",
       "Menurunkan kadar kolesterol",
     ],
-    sumber: 'http://cupsealer.me/cara-membuat-jus-anggur/'
+    sumber: 'http://cupsealer.me/'
   },
 ]
 // export default data;

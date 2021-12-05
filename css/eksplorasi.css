@@ -40,9 +40,18 @@ section.content {
   cursor: pointer;
   transition: 0.3s ease-in;
   opacity: 0;
-  animation: slide_top 1s linear forwards;
+  animation: slide_bottom .75s linear forwards;
   animation-delay: calc(0.5s * var(--i));
   overflow: hidden;
+}
+.card p {
+  animation: slide_up .65s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+}
+
+.card img {
+  animation: fade_in .45s linear forwards;
+  animation-delay: calc(0.3s * var(--i));
 }
 
 @keyframes slide_top {
@@ -55,6 +64,7 @@ section.content {
     opacity: 1;
   }
 }
+
 .card:hover {
   box-shadow: var(--shadow);
   transform: scale(1.03);

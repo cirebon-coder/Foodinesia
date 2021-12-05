@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap");
 :root {
-  /* --main-color: rgb(21, 1, 229); */
   --main-color: #0f2c67;
   --second-color: rgb(233, 160, 25);
   --hover-second: rgb(196, 139, 32);
@@ -9,6 +8,40 @@
   --box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
   --font: "montserrat", sans-serif;
 }
+
+/* animasi */
+
+@keyframes slide_left {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_bottom {
+  0% {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide_top {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 * {
   margin: 0;
@@ -30,10 +63,12 @@
   color: #fff;
   border-radius: 0.5rem;
   background-color: var(--second-color);
-  transition: 0.35s ease;
   opacity: 0;
+  transition: 0.35s ease;
+}
+.content .btn {
   animation: slide_top 0.5s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 1.3s;
 }
 .btn:hover {
   background-color: var(--hover-second);
@@ -51,7 +86,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  background-color: rgb(226, 224, 224);
+  background-color: var(--main-color);
   width: 15px;
 }
 html::-webkit-scrollbar-thumb {
@@ -84,16 +119,6 @@ html::-webkit-scrollbar-thumb {
   animation: slide_left 0.5s linear forwards;
   animation-delay: 0.2s;
 }
-@keyframes slide_left {
-  0% {
-    transform: translatex(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translatex(0px);
-    opacity: 1;
-  }
-}
 
 .header .navbar a {
   font-size: 1.7rem;
@@ -102,15 +127,6 @@ html::-webkit-scrollbar-thumb {
   opacity: 0;
   animation: slide_top 0.5s linear forwards;
   animation-delay: calc(0.2s * var(--i));
-}
-
-@keyframes slide_top {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .header .navbar a.active {
@@ -147,7 +163,7 @@ html::-webkit-scrollbar-thumb {
   margin: auto;
   opacity: 0;
   animation: fade_in 1s linear forwards;
-  animation-delay: 2.5s;
+  animation-delay: 1.9s;
 }
 
 @keyframes fade_in {
@@ -159,35 +175,6 @@ html::-webkit-scrollbar-thumb {
   }
 }
 
-.home .content h1 {
-  font-size: 4rem;
-  font-weight: bolder;
-  line-height: 130%;
-  opacity: 0;
-  animation: slide_left 0.5s linear forwards;
-  animation-delay: 1.75s;
-}
-@keyframes slide_left {
-  0% {
-    transform: translatex(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translatex(0px);
-    opacity: 1;
-  }
-}
-
-.home .content h2 {
-  font-size: 2rem;
-  padding-bottom: 2rem;
-  font-family: "montserrat", sans-serif;
-  color: var(--second-color);
-  opacity: 0;
-  animation: slide_right 0.5s linear forwards;
-  animation-delay: 1.5s;
-  overflow: hidden;
-}
 @keyframes slide_right {
   0% {
     transform: translatex(100px);
@@ -198,6 +185,36 @@ html::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+
+@keyframes slide_up {
+  0% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+.home .content h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  line-height: 130%;
+  opacity: 0;
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: .7s;
+}
+
+.home .content h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-family: "montserrat", sans-serif;
+  color: var(--second-color);
+  opacity: 0;
+  animation: slide_right 0.5s linear forwards;
+  animation-delay: .45s;
+  overflow: hidden;
+}
 .home .content p {
   font-size: 1.5rem;
   padding: 2rem 0 3.8rem;
@@ -205,7 +222,7 @@ html::-webkit-scrollbar-thumb {
   font-family: var(--font);
   opacity: 0;
   animation: slide_right 0.5s linear forwards;
-  animation-delay: 1.8s;
+  animation-delay: .95s;
 }
 
 .benefit {
@@ -222,8 +239,8 @@ html::-webkit-scrollbar-thumb {
   gap: 1rem;
   text-align: left;
   opacity: 0;
-  animation: slide_left 1s linear forwards;
-  animation-delay: calc(0.5s * var(--i));
+  animation: slide_left .5s linear forwards;
+  animation-delay: calc(3s * var(--i));
 }
 
 .benefit .box i {
@@ -252,7 +269,10 @@ html::-webkit-scrollbar-thumb {
 
 .about {
   display: flex;
+  opacity: 0;
   gap: 5rem;
+  animation: slide_bottom 0.5s linear forwards;
+  animation-delay: 5s;
 }
 
 .about .content,
@@ -281,6 +301,9 @@ html::-webkit-scrollbar-thumb {
 
 .feature .heading {
   text-align: center;
+  opacity: 0;
+  animation: slide_up 0.5s linear forwards;
+  animation-delay: 5.75s;
 }
 .feature .heading h2 {
   color: var(--second-color);
@@ -305,6 +328,9 @@ html::-webkit-scrollbar-thumb {
 .feature .box-container .box .content,
 .feature .box-container .box .img {
   width: 100%;
+  opacity: 0;
+  animation: slide_left 0.75s linear forwards;
+  animation-delay: calc(6.2s * var(--i));
 }
 .feature .box-container .box .img img {
   display: flex;
@@ -351,7 +377,7 @@ footer {
   padding: 3rem 7%;
   gap: 4rem;
   box-sizing: border-box;
-  background-color: rgb(255, 166, 0);
+  background-color: rgb(226, 226, 231);
   width: 100%;
 }
 
@@ -414,7 +440,7 @@ footer .box ul li i {
 
   .header .navbar {
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 0;
     right: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);

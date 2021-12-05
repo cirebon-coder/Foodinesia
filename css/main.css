@@ -41,23 +41,34 @@
     opacity: 1;
   }
 }
+@keyframes slide_bottom {
+  0% {
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide_up {
+  0% {
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}
 
 .header .navbar a {
   font-size: 1.1rem;
   margin-left: 2rem;
   color: black;
   opacity: 0;
-  animation: slide_top 0.5s linear forwards;
-  animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes slide_top {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
 }
 
 .header .navbar a.active {
@@ -90,7 +101,7 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   padding: 2rem 7%;
   gap: 4rem;
-  background-color: orange;
+  background-color: rgb(226, 226, 231);
 }
 
 footer .box {
@@ -140,7 +151,7 @@ footer .box ul li i {
 
   .header .navbar {
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 0;
     right: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
