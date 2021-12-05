@@ -1,0 +1,107 @@
+section.hero {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 390px;
+  background-color: var(--loading);
+  background-image: url(../images/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.hero p,
+.hero h1 {
+  text-shadow: 0 0 1rem black;
+}
+
+/* card */
+
+section.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 45%;
+  background-color: white;
+  margin-bottom: 1.8rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 1.4rem;
+  transition: 0.3s ease-in;
+  opacity: 0;
+  animation: slide_bottom 1s linear forwards;
+  animation-delay: calc(.65s * var(--i));
+  overflow: hidden;
+}
+
+@keyframes slide_top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.card:hover {
+  box-shadow: var(--shadow);
+}
+.card img {
+  width: 100%;
+  opacity: 0;
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--loading);
+  filter: contrast(1.2);
+  transition: 0.3s ease-in;
+  animation: fade_in .5s linear forwards;
+  animation-delay: calc(.35s * var(--i));
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.card p {
+  margin-bottom: 1em;
+  opacity: 0;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+  animation: slide_left .7s linear forwards;
+  animation-delay: calc(.8s * var(--i));
+}
+
+.card .name {
+  animation: slide_right .4s linear forwards;
+  animation-delay: calc(.75s * var(--i));
+  opacity: 0;
+
+}
+
+p.tanggal {
+  color: silver;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  h2.name {
+    font-size: 1.4rem;
+  }
+}

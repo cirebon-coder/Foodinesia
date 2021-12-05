@@ -1,0 +1,50 @@
+{
+    "name": "Foodinesia",
+    "short_name": "foodinesia",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#0F2C67",
+    "description": "Foodinesia merupakan sebuah website yang menyediakan referensi makanan dan minuman sehat serta artikel dan komunitas yang relevan dengan kesehatan",
+    "dir": "auto",
+    "categories": "education,health",
+    "orientation": "any",
+    "scope": "/",
+    "theme_color": "#0F2C67",
+    "icons": [
+        {
+            "src": "/images/icon/icon_48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon/icon_72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon/icon_96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon/icon_144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon/icon_168x168.png",
+            "sizes": "168x168",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon/icon_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

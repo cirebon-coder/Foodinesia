@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Poppins:wght@300;400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  background-color: var(--main-color);
+  width: 15px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(233, 160, 25);
+  border-radius: 0.35rem;
+}
+
+:root {
+  --darkColor: #05445e;
+  --primaryColor: #189ab4;
+  --secondColor: #75e6da;
+  --shadow: 0 0.4rem 0.9rem 0 rgba(0, 0, 0, 0.15);
+
+  /* --main-color: rgb(21, 1, 229); */
+  --main-color: #0f2c67;
+  --second-color: rgb(233, 160, 25);
+  --hover-second: rgb(196, 139, 32);
+  --box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  --fontPrimary: "Montserrat", Arial, sans-serif;
+  --fontSecondary: "Poppins", Arial, sans-serif;
+}
+
+h1 {
+  color: var(--second-color);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: var(--fontPrimary);
+  margin-bottom: 0.2em;
+  opacity: 0;
+  animation: slide_right 0.45s linear forwards;
+  animation-delay: .35s;
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translatex(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  opacity: 0;
+  animation: slide_left .6s linear forwards;
+  animation-delay: 1s;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.5em 0;
+  font-family: var(--fontPrimary);
+  color: var(--darkColor);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-family: var(--fontPrimary);
+  margin: 0.5em 0;
+  color: var(--darkColor);
+}
+section.hero {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 390px;
+  background-color: var(--loading);
+  background-image: url(../images/hero.jpeg);
+  background-attachment: fixed;
+  overflow: hidden;
+  background-position: bottom;
+  background-size: cover;
+  color: rgb(244, 247, 201);
+  text-align: center;
+  opacity: 0;
+  animation: fade_in .5s linear forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

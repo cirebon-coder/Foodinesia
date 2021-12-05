@@ -1,0 +1,21 @@
+assalamu'alaikum...
+
+ini adalah hasil akhir dari project yang telah di buat selama kurang lebih dua minggu ini :
+
+ aplikasi web yang telah kami buat ini kami beri nama foodinesia, yang di mana web ini bertujuan untuk mengedukasi dan membantu para pecinta kuliner sehat untuk menemukan makanan yang sehat selama masa pandemi ini dan juga akan membantu para orang-orang yang suka memasak untuk menjadi lebih produktif lagi ketika di dapur, karena di web ini berisi juga tentang resep-resep makanan yang akan sangat membantu sekali untuk mereka selama di dapur
+
+harapan kami dengan di buatnya web foodinesia ini banyak orang-orang yang terbantu Untuk Memiliki Gaya Hidup Sehat Dimulai Dari Memilih Makanan Dan Minuman Yang Sehat
+
+beberapa fitur yang ada di foodinesia ini:
+- menerapkan SPA (Single Page Apps) pada halaman detail-eksplorasi dan detail-blog, dengan menggunakan local storage untuk menyimpan datanya.
+- menerapkan PWA (Progressive Web Apps) adalah sebuah fitur yang di mana mampu membuat aplikasi web kami berjalan seperti layaknya aplikasi mobile pada umumnya, jadi di sarankan jika mau menguji harus memakai live server agar fitur PWA ini bisa berjalan dengan normal.
+- Responsive dari desktop hingga mobile, setelah kami uji di berbagai device ternyata semua tampilannya responsive.
+
+inilah daftar asset yang  telah kami gunakan:
+- fontawesome
+- googlefonts
+- aset gambar dari unsplash, pixabay, pexels, duckduckgo (difilter dengan lisensi: bebas dimodifikasi, dibagikan, dan digunakan secara komersial)
+
+sekian dari kami tim cirebon coder dan terimakasih telah membaca ini 
+
+wassalamu'alaikum...
