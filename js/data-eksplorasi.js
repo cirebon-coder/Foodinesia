@@ -307,6 +307,7 @@ const dataEksplorasi = [
       "Melawan penyakit asma",
       "Menjaga kesehatan tulang",
     ],
+    sumber: 'https://goodminds.id',
   },
   {
     id: "10",
